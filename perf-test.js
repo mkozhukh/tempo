@@ -58,9 +58,9 @@ FORMATS.forEach(testFormat => {
   const altFormatAvgTime = altFormatTime / ITERATIONS;
 
   console.log(`Format mask: ${formatStr}`);
-  console.log(`[ ] value: ${format(TEST_DATE, testFormat)}`);
-  console.log(`[a] value: ${altFomat(TEST_DATE)}`);
-  console.log(`[ ] time: ${formatTime.toFixed(2)}ms, Avg: ${formatAvgTime.toFixed(4)}ms`);
-  console.log(`[a] time: ${altFormatTime.toFixed(2)}ms, Avg: ${altFormatAvgTime.toFixed(4)}ms`);
+  console.log(`[  ] value: ${format(TEST_DATE, testFormat)}`);
+  console.log(`[wx] value: ${altFomat(TEST_DATE)}`);
+  console.log(`[  ] time: ${formatTime.toFixed(2)}ms, Avg: ${formatAvgTime.toFixed(4)}ms`);
+  console.log(`[wx] time: ${altFormatTime.toFixed(2)}ms, Avg: ${altFormatAvgTime.toFixed(4)}ms`);
   console.log('-----------------------');
 }); 

@@ -19,3 +19,21 @@ Tempo is tiny tree-shakable framework, you can only take what you need. All func
 ---
 
 Created by the <a href="https://formkit.com">FormKit team</a>.
+
+
+## Fork Differences
+
+This fork enhances the original Tempo library by adding the `compile` function 
+
+```ts
+const formatter = compile("HH:mm")
+const dataStr = formatter(dataObject);
+```
+
+Using compile result in much faster formatting functionality when used against a large number of dates
+
+```text
+Format mask: YYYY-MM-DD ( 1000 dates )
+[  ] time: 28.57ms, Avg: 0.2857ms
+[wx] time: 0.27ms, Avg: 0.0027ms
+```
